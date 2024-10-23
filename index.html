@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Font Loader</title>
+  <style>
+    @font-face {
+      font-family: 'GroutpixFlowSerif';
+      src: url('https://your-worker-url.com/fonts/groutpix-flow-serif.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    body {
+      font-family: 'GroutpixFlowSerif', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Custom Font Loader</h1>
+  <p>This text is using the custom "GroutpixFlowSerif" font loaded from a Cloudflare Worker!</p>
+</body>
+</html>
